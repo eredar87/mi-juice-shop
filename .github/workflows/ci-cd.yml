@@ -6,6 +6,12 @@ on:
   pull_request:
     branches: [ master ]
 
+# Add these permissions
+permissions:
+  pull-requests: read
+  contents: write
+  security-events: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
